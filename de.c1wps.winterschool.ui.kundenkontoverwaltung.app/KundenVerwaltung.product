@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Kunden Verwaltung" uid="de.c1wps.winterschool.KundenVerwaltung.ProductID" id="de.c1wps.winterschool.KundenVerwaltung.loesung6.product" application="de.c1wps.winterschool.KundenVerwaltung.loesung6.application" useFeatures="false" includeLaunchers="true">
+<product name="Kunden Verwaltung" uid="de.c1wps.winterschool.KundenVerwaltung.ProductID" id="de.c1wps.winterschool.ui.kundenkontoverwaltung.app.product" application="de.c1wps.winterschool.ui.kundenkontoverwaltung.app.application" useFeatures="false" includeLaunchers="false">
 
 
    <configIni use="default">
@@ -13,7 +13,7 @@
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
 
-   <windowImages i16="/de.c1wps.winterschool.KundenVerwaltung.loesung6/icons/groups16x16.gif" i32="/de.c1wps.winterschool.KundenVerwaltung.loesung6/icons/groups32x32.gif"/>
+   <windowImages i16="/de.c1wps.winterschool.ui.kundenkontoverwaltung.app/icons/groups16x16.gif" i32="/de.c1wps.winterschool.ui.kundenkontoverwaltung.app/icons/groups32x32.gif"/>
 
    <splash
       location="de.c1wps.winterschool.KundenVerwaltung"
@@ -30,14 +30,18 @@
    <vm>
    </vm>
 
+
    <plugins>
       <plugin id="com.ibm.icu"/>
-      <plugin id="de.c1wps.winterschool.KundenVerwaltung.loesung6"/>
+      <plugin id="de.c1wps.winterschool.domain.common"/>
+      <plugin id="de.c1wps.winterschool.domain.konto"/>
       <plugin id="de.c1wps.winterschool.domain.kunde"/>
-      <plugin id="de.c1wps.winterschool.service.kunde.loesung5"/>
-      <plugin id="de.c1wps.winterschool.ui.KundenEditor"/>
-      <plugin id="de.c1wps.winterschool.ui.KundenLister.loesung6"/>
-      <plugin id="de.c1wps.winterschool.ui.common"/>
+      <plugin id="de.c1wps.winterschool.kundenkontoverwalter"/>
+      <plugin id="de.c1wps.winterschool.service.konto"/>
+      <plugin id="de.c1wps.winterschool.service.kunde"/>
+      <plugin id="de.c1wps.winterschool.ui.kundenauflister"/>
+      <plugin id="de.c1wps.winterschool.ui.kundeneditor"/>
+      <plugin id="de.c1wps.winterschool.ui.kundenkontoverwaltung.app"/>
       <plugin id="javax.servlet"/>
       <plugin id="org.eclipse.core.commands"/>
       <plugin id="org.eclipse.core.contenttype"/>
@@ -61,13 +65,13 @@
       <plugin id="org.eclipse.osgi"/>
       <plugin id="org.eclipse.osgi.services"/>
       <plugin id="org.eclipse.swt"/>
+      <plugin id="org.eclipse.swt.gtk.linux.x86_64" fragment="true"/>
       <plugin id="org.eclipse.swt.win32.win32.x86" fragment="true"/>
       <plugin id="org.eclipse.ui"/>
       <plugin id="org.eclipse.ui.workbench"/>
    </plugins>
 
    <configurations>
-      <plugin id="de.c1wps.winterschool.service.kunde.loesung5" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="0" />

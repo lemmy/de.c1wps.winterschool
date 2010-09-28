@@ -49,7 +49,7 @@
          id="product"
          point="org.eclipse.core.runtime.products">
       <product
-            application="de.c1wps.winterschool.KundenVerwaltung.loesung6.application"
+            application="de.c1wps.winterschool.KundenVerwaltung.application"
             name="Kunden Verwaltung">
          <property
                name="windowImages"
