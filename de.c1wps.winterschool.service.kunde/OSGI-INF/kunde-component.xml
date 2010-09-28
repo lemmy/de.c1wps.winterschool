@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" enabled="true" immediate="true" name="kundenService">
+   <implementation class="de.c1wps.winterschool.service.kunde.KundenServiceMemImpl"/>
+   <service>
+      <provide interface="de.c1wps.winterschool.domain.kunde.service.IKundenService"/>
+   </service>
+   <reference bind="bindKundeChangedListener" cardinality="0..n" interface="de.c1wps.winterschool.domain.kunde.listener.IKundeChangedListener" name="IKundeChangedListener" policy="dynamic" unbind="unbindKundeChangedListener"/>
+   <property name="service.exported.interfaces" type="String" value="*"/>
+</scr:component>

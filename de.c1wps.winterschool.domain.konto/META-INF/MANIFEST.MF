@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Konto
+Bundle-SymbolicName: de.c1wps.winterschool.domain.konto
+Bundle-Version: 1.0.0
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: de.c1wps.winterschool.domain.konto.fachwerte,
+ de.c1wps.winterschool.domain.konto.listener,
+ de.c1wps.winterschool.domain.konto.material,
+ de.c1wps.winterschool.domain.konto.service
+Import-Package: de.c1wps.winterschool.domain.kunde.fachwerte,
+ org.osgi.framework;version="1.5.0"

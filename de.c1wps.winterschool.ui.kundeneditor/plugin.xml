@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="de.c1wps.winterschool.ui.kundeneditor.KundenEditor"
+            default="true"
+            icon="icons/personal.png"
+            id="de.c1wps.winterschool.ui.KundenEditor"
+            name="Kunden Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="false"
+            id="de.c1wps.winterschool.ui.KundenEditor.objectContribution2"
+            objectClass="de.c1wps.winterschool.domain.kunde.material.Kunde">
+         <action
+               class="de.c1wps.winterschool.ui.kundeneditor.OpenKundenEditorAction"
+               icon="icons/personal.png"
+               id="de.c1wps.winterschool.ui.KundenEditor.action3"
+               label="Öffne Kunden Editor">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>

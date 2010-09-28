@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: KundenEditor
+Bundle-SymbolicName: de.c1wps.winterschool.ui.kundeneditor;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: de.c1wps.winterschool.ui.kundeneditor.internal.KundenEditorActivator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Import-Package: de.c1wps.winterschool.domain.common,
+ de.c1wps.winterschool.domain.kunde.fachwerte,
+ de.c1wps.winterschool.domain.kunde.listener,
+ de.c1wps.winterschool.domain.kunde.material,
+ de.c1wps.winterschool.domain.kunde.service

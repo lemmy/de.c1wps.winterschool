@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Kunde
+Bundle-SymbolicName: de.c1wps.winterschool.domain.kunde
+Bundle-Version: 1.0.0
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: de.c1wps.winterschool.domain.kunde.fachwerte,
+ de.c1wps.winterschool.domain.kunde.listener,
+ de.c1wps.winterschool.domain.kunde.material,
+ de.c1wps.winterschool.domain.kunde.service
+ 

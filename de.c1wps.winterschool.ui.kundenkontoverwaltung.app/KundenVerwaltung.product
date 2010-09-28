@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Kunden Verwaltung" uid="de.c1wps.winterschool.KundenVerwaltung.ProductID" id="de.c1wps.winterschool.KundenVerwaltung.loesung6.product" application="de.c1wps.winterschool.KundenVerwaltung.loesung6.application" useFeatures="false" includeLaunchers="true">
+
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-os ${target.os} -ws ${target.ws} -arch ${target.arch} -nl ${target.nl}</programArgs>
+      <vmArgs>-Xms40m -Xmx256m</vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/de.c1wps.winterschool.KundenVerwaltung.loesung6/icons/groups16x16.gif" i32="/de.c1wps.winterschool.KundenVerwaltung.loesung6/icons/groups32x32.gif"/>
+
+   <splash
+      location="de.c1wps.winterschool.KundenVerwaltung"
+      startupProgressRect="5,275,445,15" />
+   <launcher name="KundenVerwaltung">
+      <solaris/>
+      <win useIco="true">
+         <ico path="/de.c1wps.winterschool.KundenVerwaltung/icons/alt_launcher.ico"/>
+         <bmp/>
+      </win>
+   </launcher>
+
+
+   <vm>
+   </vm>
+
+   <plugins>
+      <plugin id="com.ibm.icu"/>
+      <plugin id="de.c1wps.winterschool.KundenVerwaltung.loesung6"/>
+      <plugin id="de.c1wps.winterschool.domain.kunde"/>
+      <plugin id="de.c1wps.winterschool.service.kunde.loesung5"/>
+      <plugin id="de.c1wps.winterschool.ui.KundenEditor"/>
+      <plugin id="de.c1wps.winterschool.ui.KundenLister.loesung6"/>
+      <plugin id="de.c1wps.winterschool.ui.common"/>
+      <plugin id="javax.servlet"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.auth"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.ds"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.util"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.jface"/>
+      <plugin id="org.eclipse.jface.databinding"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.swt"/>
+      <plugin id="org.eclipse.swt.win32.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.ui"/>
+      <plugin id="org.eclipse.ui.workbench"/>
+   </plugins>
+
+   <configurations>
+      <plugin id="de.c1wps.winterschool.service.kunde.loesung5" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.osgi" autoStart="true" startLevel="-1" />
+   </configurations>
+
+</product>

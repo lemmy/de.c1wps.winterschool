@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: KundenLister
+Bundle-SymbolicName: de.c1wps.winterschool.ui.kundenauflister;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: de.c1wps.winterschool.ui.kundenlister.internal.KundenListerActivator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ de.c1wps.winterschool.domain.common;bundle-version="1.0.0",
+ de.c1wps.winterschool.domain.kunde;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5

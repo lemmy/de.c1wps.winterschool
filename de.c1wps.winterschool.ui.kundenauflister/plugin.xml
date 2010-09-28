@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="de.c1wps.winterschool.ui.kundenlister.KundenListerView"
+            icon="icons/account.png"
+            id="de.c1wps.winterschool.ui.KundenAuflister"
+            name="Kunden"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="de.c1wps.winterschool.KundenVerwaltung.perspective">
+         <view
+               id="de.c1wps.winterschool.ui.KundenAuflister"
+               minimized="false"
+               ratio="0.5"
+               relationship="left"
+               relative="org.eclipse.ui.editorss">
+         </view>
+      </perspectiveExtension>
+   </extension>
+
+</plugin>

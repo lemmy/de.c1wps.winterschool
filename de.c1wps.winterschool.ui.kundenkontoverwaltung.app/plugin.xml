@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            icon="icons/alt_about.gif">
+         <run
+               class="de.c1wps.winterschool.ui.kundenverwaltung.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="de.c1wps.winterschool.ui.kundenverwaltung.Perspective"
+            icon="icons/alt_window_16.gif"
+            id="de.c1wps.winterschool.KundenVerwaltung.perspective"
+            name="RCP Perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="productID"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="de.c1wps.winterschool.KundenVerwaltung.application"
+            name="Kunden Verwaltung">
+         <property
+               name="appName"
+               value="Kunden Verwaltung">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="5,275,445,15">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/groups16x16.gif,icons/groups32x32.gif">
+         </property>
+      </product>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="de.c1wps.winterschool.KundenVerwaltung.loesung6.application"
+            name="Kunden Verwaltung">
+         <property
+               name="windowImages"
+               value="icons/groups16x16.gif,icons/groups32x32.gif">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="5,275,445,15">
+         </property>
+         <property
+               name="appName"
+               value="Kunden Verwaltung">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
