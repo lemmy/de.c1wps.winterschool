@@ -28,6 +28,10 @@
          id="org.eclipse.platform"
          version="0.0.0"/>
 
+   <includes
+         id="org.eclipse.ecf.discovery.local.feature"
+         version="0.0.0"/>
+
    <plugin
          id="de.c1wps.winterschool.domain.common"
          download-size="0"
