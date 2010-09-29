@@ -17,15 +17,15 @@
    </license>
 
    <includes
-         id="org.eclipse.rcp"
-         version="0.0.0"/>
-
-   <includes
          id="org.eclipse.ecf.osgi.services.feature"
          version="0.0.0"/>
 
    <includes
          id="org.eclipse.ecf.discovery.jmdns.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.platform"
          version="0.0.0"/>
 
    <plugin
