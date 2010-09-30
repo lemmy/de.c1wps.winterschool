@@ -1,3 +1,6 @@
+/*******************************************************************************
+ * Copyright (c) 2010 C1WPS GmbH. All rights reserved.
+ *******************************************************************************/
 package de.c1wps.winterschool.ui.kundeneditor;
 
 import org.eclipse.jface.resource.ImageDescriptor;

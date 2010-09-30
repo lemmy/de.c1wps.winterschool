@@ -1,3 +1,6 @@
+/*******************************************************************************
+ * Copyright (c) 2010 C1WPS GmbH. All rights reserved.
+ *******************************************************************************/
 package de.c1wps.winterschool.domain.konto.fachwerte;
 
 import java.io.Serializable;
@@ -49,7 +52,7 @@ public class Kontonummer implements Serializable
    }
    
    /**
-    * Prüft, ob ein gegebener Integer eine gültige Kontonummer repräsentiert
+    * Prï¿½ft, ob ein gegebener Integer eine gï¿½ltige Kontonummer reprï¿½sentiert
     */
    public static boolean isValid(int intValue)
    {  
@@ -57,7 +60,7 @@ public class Kontonummer implements Serializable
    }
    
    /**
-    * Prüft, ob ein gegebener String eine gültige Kontonummer repräsentiert
+    * Prï¿½ft, ob ein gegebener String eine gï¿½ltige Kontonummer reprï¿½sentiert
     */
    public static boolean isValid(String value)
    {
@@ -74,7 +77,7 @@ public class Kontonummer implements Serializable
    }
    
    /**
-    * Gibt die Integer-Repräsentation zu einer VerwaltungsNummer
+    * Gibt die Integer-Reprï¿½sentation zu einer VerwaltungsNummer
     */
    public int value()
    {

@@ -1,3 +1,6 @@
+/*******************************************************************************
+ * Copyright (c) 2010 C1WPS GmbH. All rights reserved.
+ *******************************************************************************/
 package de.c1wps.winterschool.service.kunde;
 
 import java.util.Collections;

@@ -1,3 +1,6 @@
+/*******************************************************************************
+ * Copyright (c) 2010 C1WPS GmbH. All rights reserved.
+ *******************************************************************************/
 package de.c1wps.winterschool.ui.kundenverwaltung;
 
 import org.eclipse.ui.IPageLayout;

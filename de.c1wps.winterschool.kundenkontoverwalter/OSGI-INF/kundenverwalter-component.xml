@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?><!--
+    Copyright (c) 2010 C1WPS GmbH. All rights reserved.
+ -->
+
 <scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" enabled="true" name="kundenVerwalter">
    <implementation class="de.c1wps.winterschool.kundekontoverwalter.KundenVerwalter"/>
    <reference bind="bindKundenService" cardinality="1..1" interface="de.c1wps.winterschool.domain.kunde.service.IKundenService" name="IKundenService" policy="dynamic" unbind="unbindKundenService"/>

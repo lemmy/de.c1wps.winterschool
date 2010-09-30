@@ -1,3 +1,6 @@
+/*******************************************************************************
+ * Copyright (c) 2010 C1WPS GmbH. All rights reserved.
+ *******************************************************************************/
 package de.c1wps.winterschool.domain.konto.fachwerte;
 
 import java.io.Serializable;
@@ -17,7 +20,7 @@ public class Zinssatz implements Serializable
 	
 	
    /**
-    * Konstruktor für den Zinssatz. Der Konstruktor akzeptiert Werte < 0.5 als < 50% und wandelt
+    * Konstruktor fï¿½r den Zinssatz. Der Konstruktor akzeptiert Werte < 0.5 als < 50% und wandelt
     * alle Werte >= 0.5 so um, dass sie >= 0,5% sind.
     * 
     * @param wert Der Wert des Zinssatz als float.
@@ -34,7 +37,7 @@ public class Zinssatz implements Serializable
    }
 
    /**
-    * Gibt den Wert des Zinssatz zurück. Der Zinssatz wird als Faktor gespeichert, also bedeutet
+    * Gibt den Wert des Zinssatz zurï¿½ck. Der Zinssatz wird als Faktor gespeichert, also bedeutet
     * 1.0: 100% und 0.03: 3%.
     * 
     * @return Der Wert des Zinssatzes als float.
