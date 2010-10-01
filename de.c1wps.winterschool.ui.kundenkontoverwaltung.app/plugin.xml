@@ -28,7 +28,7 @@
          id="productID"
          point="org.eclipse.core.runtime.products">
       <product
-            application="de.c1wps.winterschool.KundenVerwaltung.application"
+            application="de.c1wps.winterschool.ui.kundenkontoverwaltung.app.application"
             name="Kunden Verwaltung">
          <property
                name="appName"
@@ -52,7 +52,7 @@
          id="product"
          point="org.eclipse.core.runtime.products">
       <product
-            application="de.c1wps.winterschool.KundenVerwaltung.application"
+            application="de.c1wps.winterschool.ui.kundenkontoverwaltung.app.application"
             name="Kunden Verwaltung">
          <property
                name="windowImages"
