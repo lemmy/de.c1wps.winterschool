@@ -41,7 +41,7 @@ public class KundenEditorInput implements IEditorInput {
 		return "Input for the Kunden Editor";
 	}
 
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings("rawtypes")
 	public Object getAdapter(Class adapter) {
 		return null;
 	}
