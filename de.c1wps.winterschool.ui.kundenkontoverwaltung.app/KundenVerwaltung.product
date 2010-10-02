@@ -8,7 +8,7 @@
    </configIni>
 
    <launcherArgs>
-      <programArgs>-os ${target.os} -ws ${target.ws} -arch ${target.arch} -nl ${target.nl}</programArgs>
+      <programArgs>-os ${target.os} -ws ${target.ws} -arch ${target.arch} -nl ${target.nl} -clean -console -consoleLog</programArgs>
       <vmArgs>-Xms40m -Xmx256m</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
@@ -21,7 +21,7 @@
    <launcher name="KundenVerwaltung">
       <solaris/>
       <win useIco="true">
-         <ico path="/de.c1wps.winterschool.KundenVerwaltung/icons/alt_launcher.ico"/>
+         <ico path="icons/alt_launcher.ico"/>
          <bmp/>
       </win>
    </launcher>
