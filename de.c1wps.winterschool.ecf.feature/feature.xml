@@ -25,6 +25,10 @@
          version="0.0.0"/>
 
    <includes
+         id="org.eclipse.ecf.remoteservice.rosgi.feature"
+         version="0.0.0"/>
+
+   <includes
          id="org.eclipse.ecf.discovery.jmdns.feature"
          version="0.0.0"/>
 

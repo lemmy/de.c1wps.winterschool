@@ -5,6 +5,7 @@ Bundle-SymbolicName: de.c1wps.winterschool.ecf.serviceconsumer.listener
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: de.c1wps.winterschool.ecf.serviceconsumer.listener.ServiceConsumerListenerActivator
 Import-Package: org.eclipse.ecf.discovery;version="4.0.0",
+ org.eclipse.ecf.discovery.identity;version="3.0.0",
  org.eclipse.ecf.osgi.services.discovery;version="1.1.0",
  org.eclipse.ecf.osgi.services.distribution;version="1.1.0",
  org.eclipse.ecf.remoteservice,
