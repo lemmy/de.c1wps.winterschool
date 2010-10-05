@@ -10,3 +10,4 @@ Import-Package: de.c1wps.winterschool.domain.kunde.fachwerte,
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Service-Component: OSGI-INF/kunde-component.xml
 Require-Bundle: de.c1wps.winterschool.domain.kunde
+Export-Package: de.c1wps.winterschool.service.kunde
