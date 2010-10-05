@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.pde.ui.EquinoxLauncher">
+<booleanAttribute key="append.args" value="true"/>
+<booleanAttribute key="automaticAdd" value="false"/>
+<booleanAttribute key="automaticValidate" value="true"/>
+<stringAttribute key="bad_container_name" value="/Exercise01/de.c1wps.winterschool.ecf.feature"/>
+<stringAttribute key="bootstrap" value=""/>
+<stringAttribute key="checked" value="[NONE]"/>
+<booleanAttribute key="clearConfig" value="false"/>
+<stringAttribute key="configLocation" value="${workspace_loc}/.metadata/.plugins/org.eclipse.pde.core/ServiceProvider"/>
+<booleanAttribute key="default" value="true"/>
+<booleanAttribute key="default_auto_start" value="true"/>
+<intAttribute key="default_start_level" value="4"/>
+<booleanAttribute key="includeOptional" value="false"/>
+<stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-os ${target.os} -ws ${target.ws} -arch ${target.arch} -nl ${target.nl} -consoleLog -console -clean"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.pde.ui.workbenchClasspathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-XX:PermSize=256M -XX:MaxPermSize=512M -XX:+UseParallelGC -Xms512m -Xmx1024m -Declipse.ignoreApp=true -Dosgi.noShutdown=true -Dorg.eclipse.ecf.provider.generic.host.useHostName=true"/>
+<stringAttribute key="pde.version" value="3.3"/>
+<booleanAttribute key="show_selected_only" value="false"/>
+<stringAttribute key="target_bundles" value="org.eclipse.core.contenttype@default:default,org.eclipse.ecf*3.1.200.v20101004-1417@default:default,org.eclipse.osgi@-1:true,org.eclipse.core.runtime.compatibility.registry@default:false,org.eclipse.ecf.provider.remoteservice@default:default,org.eclipse.ecf.identity*3.1.100.v20101004-1417@default:default,org.eclipse.equinox.registry@default:default,org.eclipse.core.runtime@default:true,org.eclipse.equinox.concurrent@default:default,org.eclipse.equinox.ds@default:true,org.eclipse.equinox.util@default:default,org.eclipse.ecf.ssl@default:false,org.eclipse.osgi.services@default:default,org.eclipse.ecf.remoteservice@default:default,org.eclipse.ecf.discovery@default:default,org.eclipse.ecf.osgi.services.discovery@default:default,org.eclipse.ecf.provider@default:default,org.eclipse.core.jobs@default:default,org.eclipse.equinox.preferences@default:default,org.eclipse.ecf.sharedobject@default:default,org.eclipse.ecf.osgi.services.distribution@default:default,org.eclipse.equinox.common@2:true,org.eclipse.equinox.app@default:default"/>
+<stringAttribute key="timestamp" value="1286278060719"/>
+<booleanAttribute key="tracing" value="false"/>
+<booleanAttribute key="useCustomFeatures" value="false"/>
+<booleanAttribute key="useDefaultConfigArea" value="true"/>
+<stringAttribute key="workspace_bundles" value="de.c1wps.winterschool.domain.kunde@default:default,de.c1wps.winterschool.service.konto@default:default,de.c1wps.winterschool.domain.konto@default:default,de.c1wps.winterschool.service.kunde@default:default"/>
+</launchConfiguration>
