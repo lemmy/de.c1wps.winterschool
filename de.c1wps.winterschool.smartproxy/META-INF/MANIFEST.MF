@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Smartproxy
+Bundle-SymbolicName: de.c1wps.winterschool.smartproxy
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: de.c1wps.winterschool.smartproxy.SmartServiceActivator
+Import-Package: ch.ethz.iks.r_osgi;version="1.0.0.RC4",
+ de.c1wps.winterschool.domain.kunde.material,
+ de.c1wps.winterschool.domain.kunde.service,
+ org.osgi.framework;version="1.3.0"
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
