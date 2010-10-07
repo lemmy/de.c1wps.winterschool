@@ -13,6 +13,11 @@ public class Kunde extends Person{
 	private static final long serialVersionUID = 8276603133338718051L;
 	private Kundennummer _kundennummer;
 	
+	@SuppressWarnings("unused")
+	private Kunde() {
+		super();
+	}
+	
 	public Kunde(Kundennummer kundennummer, String vorname, String nachname, Adresse adresse) {
 		super(vorname, nachname, adresse);
 		_kundennummer = kundennummer;

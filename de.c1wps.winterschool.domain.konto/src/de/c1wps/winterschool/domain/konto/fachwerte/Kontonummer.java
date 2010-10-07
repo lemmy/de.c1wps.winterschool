@@ -3,14 +3,13 @@
  *******************************************************************************/
 package de.c1wps.winterschool.domain.konto.fachwerte;
 
-import java.io.Serializable;
 
 /**
  * Kontonummer
  *
  * (Fachwert)
  */
-public class Kontonummer implements Serializable
+public class Kontonummer extends BasisFachwert
 {
    private int _value;
    

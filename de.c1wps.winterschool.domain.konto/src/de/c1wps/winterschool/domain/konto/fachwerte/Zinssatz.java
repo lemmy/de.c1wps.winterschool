@@ -3,9 +3,8 @@
  *******************************************************************************/
 package de.c1wps.winterschool.domain.konto.fachwerte;
 
-import java.io.Serializable;
 
-public class Zinssatz implements Serializable
+public class Zinssatz extends BasisFachwert
 {
    /**
     * Exemplarvariable zum Speichern des Wertes des Zinssatzes. Der Zinssatz wird als Faktor

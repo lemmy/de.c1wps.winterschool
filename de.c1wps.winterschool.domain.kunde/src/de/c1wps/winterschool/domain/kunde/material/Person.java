@@ -30,6 +30,9 @@ public class Person extends BasisMaterial {
 		_adresse = adresse;
 	}
 
+	protected Person() {
+	}
+
 	/**
 	 * Gibt die Adresse der Person zur�ck.
 	 * 

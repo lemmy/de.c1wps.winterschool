@@ -9,11 +9,15 @@ package de.c1wps.winterschool.domain.kunde.fachwerte;
  * 
  * (Fachwert)
  */
-public class Kundennummer implements java.io.Serializable {
-	private static final long serialVersionUID = 603348283203590511L;
+public class Kundennummer {
 
 	private int _wert;
 
+	@SuppressWarnings("unused")
+	private Kundennummer() {
+		
+	}
+	
 	/**
 	 * Konstruktor
 	 * 

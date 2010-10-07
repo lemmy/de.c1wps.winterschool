@@ -3,7 +3,7 @@
  *******************************************************************************/
 package de.c1wps.winterschool.domain.kunde.material;
 
-public class BasisMaterial implements java.io.Serializable{
+public class BasisMaterial {
 
 	private static final long serialVersionUID = -1306175460546170879L;
 

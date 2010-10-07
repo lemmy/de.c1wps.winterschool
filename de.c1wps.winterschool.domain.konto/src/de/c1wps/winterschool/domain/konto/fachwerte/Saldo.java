@@ -3,9 +3,8 @@
  *******************************************************************************/
 package de.c1wps.winterschool.domain.konto.fachwerte;
 
-import java.io.Serializable;
 
-public class Saldo implements Serializable
+public class Saldo extends BasisFachwert
 {
 
 	/**

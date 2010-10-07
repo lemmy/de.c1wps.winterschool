@@ -3,9 +3,8 @@
  *******************************************************************************/
 package de.c1wps.winterschool.domain.konto.fachwerte;
 
-import java.io.Serializable;
 
-public class Betrag implements Serializable
+public class Betrag extends BasisFachwert
 {
 	/**
 	 * 
