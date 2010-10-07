@@ -3,14 +3,20 @@
  *******************************************************************************/
 package de.c1wps.winterschool.domain.kunde.fachwerte;
 
+import java.io.Serializable;
+
 
 /**
  * Kundennummer
  * 
  * (Fachwert)
  */
-public class Kundennummer {
+public class Kundennummer implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3290742661620153852L;
 	private int _wert;
 
 	@SuppressWarnings("unused")

@@ -3,7 +3,6 @@
  *******************************************************************************/
 package de.c1wps.winterschool.domain.kunde.material;
 
-import java.io.Serializable;
 
 
 /**
@@ -14,7 +13,7 @@ import java.io.Serializable;
  * 
  * @author Massoud Najafi
  */
-public class Adresse implements Serializable{
+public class Adresse extends BasisMaterial {
 	private static final long serialVersionUID = -6702479686629330366L;
 	private String _strasse;
 	private int _plz;

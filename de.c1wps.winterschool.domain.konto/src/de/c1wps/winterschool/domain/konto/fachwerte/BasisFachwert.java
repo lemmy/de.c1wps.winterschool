@@ -1,7 +1,9 @@
 package de.c1wps.winterschool.domain.konto.fachwerte;
 
+import java.io.Serializable;
 
-public abstract class BasisFachwert {
+
+public abstract class BasisFachwert implements Serializable {
 
 	/**
 	 * 
