@@ -8,5 +8,4 @@
       <provide interface="de.c1wps.winterschool.domain.konto.service.IKontoService"/>
    </service>
    <reference bind="bindKontoChangeListener" cardinality="0..n" interface="de.c1wps.winterschool.domain.konto.listener.IKontoChangeListener" name="IKontoChangeListener" policy="static" unbind="unbindKontoChangeListener"/>
-   <property name="service.exported.interfaces" type="String" value="*"/>
 </scr:component>
