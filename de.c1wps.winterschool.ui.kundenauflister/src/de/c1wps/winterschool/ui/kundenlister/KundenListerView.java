@@ -3,6 +3,9 @@
  *******************************************************************************/
 package de.c1wps.winterschool.ui.kundenlister;
 
+import org.eclipse.core.runtime.OperationCanceledException;
+import org.eclipse.equinox.concurrent.future.IFuture;
+import org.eclipse.equinox.concurrent.future.TimeoutException;
 import org.eclipse.jface.action.IMenuListener;
 import org.eclipse.jface.action.IMenuManager;
 import org.eclipse.jface.action.MenuManager;
@@ -28,8 +31,10 @@ import de.c1wps.winterschool.domain.kunde.fachwerte.Kundennummer;
 import de.c1wps.winterschool.domain.kunde.listener.IKundeChangedListener;
 import de.c1wps.winterschool.domain.kunde.material.Kunde;
 import de.c1wps.winterschool.domain.kunde.service.IKundenService;
+import de.c1wps.winterschool.domain.kunde.service.IKundenServiceAsync;
 import de.c1wps.winterschool.ui.kundenlister.internal.KundenListerActivator;
 
+@SuppressWarnings("restriction")
 public class KundenListerView extends ViewPart implements
 		IGenericServiceListener<IKundenService> {
 
@@ -89,16 +94,52 @@ public class KundenListerView extends ViewPart implements
 	private void refreshInput() {
 		if (service != null) {
 			try {
-				final Kunde[] kunden = service.listKunden();
-				viewer.getTable().getDisplay().asyncExec(new Runnable() {
-					public void run() {
-						viewer.setInput(kunden);
+				if(service instanceof IKundenServiceAsync) {
+					final IKundenServiceAsync serviceAsync = (IKundenServiceAsync) service;
+					final IFuture kunden = serviceAsync.listKundenAsync();
+					try {
+						// do something else here before kunden gets used
+						// doSomeHeavyComputation();
+						
+						if(kunden.isDone()) {
+							setInput((Kunde[])kunden.get());
+						}
+						
+						// do again something else first
+						// doAnotherHeavyComputation();
+						
+						if(kunden.isDone()) {
+							setInput((Kunde[])kunden.get());
+						}
+						
+						// finally wait for 1000ms to set the input and fail otherwise 
+						setInput((Kunde[]) kunden.get(1000));
+					} catch (OperationCanceledException e) {
+						//TODO handle e somehow, but how?
+						e.printStackTrace();
+					} catch (InterruptedException e) {
+						//TODO handle e somehow, but how?
+						e.printStackTrace();
+					} catch (TimeoutException e) {
+						//TODO handle e somehow, but how?
+						e.printStackTrace();
 					}
-				});				
+				} else {
+					setInput(service.listKunden());
+				}
 			} catch (ServiceException e) {
 				e.printStackTrace();
 			}
 		}
+	}
+
+	private void setInput(final Kunde[] kundes) {
+		// join UI thread
+		viewer.getTable().getDisplay().asyncExec(new Runnable() {
+			public void run() {
+				viewer.setInput(kundes);
+			}
+		});				
 	}
 
 	@Override
