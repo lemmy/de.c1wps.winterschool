@@ -6,6 +6,7 @@ package de.c1wps.winterschool.ui.kundeneditor;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.jface.bindings.keys.KeyStroke;
 import org.eclipse.jface.bindings.keys.ParseException;
+import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.fieldassist.ContentProposalAdapter;
 import org.eclipse.jface.fieldassist.SimpleContentProposalProvider;
 import org.eclipse.jface.fieldassist.TextContentAdapter;
@@ -64,7 +65,21 @@ public class KundenEditor extends EditorPart {
 				originalKunde = currentKunde.copy();
 				firePropertyChange(EditorPart.PROP_DIRTY);
 			} catch (ServiceException e) {
-				e.printStackTrace();
+				switch (e.getType()) {
+				case ServiceException.REMOTE:
+					MessageDialog.openError(Display.getCurrent()
+							.getActiveShell(),
+							"Network Error (you data is probably lost)", e
+									.getMessage());
+					// TODO make this bundle "dynamic aware" so that it recovers
+					// if the kundenservice is pulled
+					// includes keeping/preserving the state!
+					break;
+				default:
+					// TODO handle local messages too!
+					e.printStackTrace();
+					break;
+				}
 			}
 
 		}
