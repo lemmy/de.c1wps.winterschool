@@ -130,6 +130,8 @@ public class KundenListerView extends ViewPart implements
 			} catch (ServiceException e) {
 				e.printStackTrace();
 			}
+		} else {
+			setInput(new Kunde[0]);
 		}
 	}
 
@@ -186,6 +188,7 @@ public class KundenListerView extends ViewPart implements
 
 	public void unbindService(IKundenService service) {
 		this.service = null;
+		refreshInput();
 	}
 
 }
