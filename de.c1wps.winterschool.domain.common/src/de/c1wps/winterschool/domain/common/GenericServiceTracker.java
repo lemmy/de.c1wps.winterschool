@@ -25,18 +25,28 @@ public class GenericServiceTracker<S> extends ServiceTracker {
 				.synchronizedList(new ArrayList<IGenericServiceListener<S>>());
 	}
 
+	/* (non-Javadoc)
+	 * @see org.osgi.util.tracker.ServiceTracker#addingService(org.osgi.framework.ServiceReference)
+	 */
 	@Override
 	public Object addingService(ServiceReference reference) {
 		service = clazz.cast(super.addingService(reference));
-
-		informListener();
-		return service;
-	}
-
-	private void informListener() {
 		for (IGenericServiceListener<S> listener : serviceListener) {
 			listener.bindService(service);
 		}
+		return service;
+	}
+	
+	/* (non-Javadoc)
+	 * @see org.osgi.util.tracker.ServiceTracker#removedService(org.osgi.framework.ServiceReference, java.lang.Object)
+	 */
+	@Override
+	public void removedService(ServiceReference reference, Object aService) {
+		service = clazz.cast(aService);
+		for (IGenericServiceListener<S> listener : serviceListener) {
+			listener.unbindService(service);
+		}
+		super.removedService(reference, service);
 	}
 
 	public void addServiceListener(IGenericServiceListener<S> serviceListener) {
